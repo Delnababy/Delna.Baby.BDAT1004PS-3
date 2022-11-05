@@ -1,0 +1,22 @@
+class Marsupial:
+def_init_(self):
+  # the pouch as alist
+  self.pouch=[]
+def put_in_pouch(self, stuff):
+  self.pouch=self.pouch+[stuff]
+def pouch_contents(self):
+  stuff=""
+  if(len(self.pouch)>1):
+      for i in range(len(self.pouch)-1):
+          stuff=stuff+self.pouch[i]+","
+      stuff=stuff+"and"
+  stuff=stuff+self.pouch[-1]+"."
+  
+  return "I am a marsupial. My pouch contains a "+stuff"
+  m=Marsupial
+  m.put_in_pouch("doll")
+  m.put_in_pouch("firetruck")
+  m.puy_in_pouch("kitten")
+  print(m.pouch_contents())
+  print(m)
+  
